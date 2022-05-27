@@ -1,5 +1,5 @@
 package practise;
-
+// This is about distributed transaction system in a springboot application, where we deal with multiple databases, and understand under the hood implementation of libraries like: native jdbc, spring-jdbc, JPA/Spring-data-JPA, JTA/Spring-transactions for connection/crud/transaction mgt.
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
@@ -10,7 +10,7 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 // be very careful on where you place the main class.
 
-//disabling jpa auto configuration, where we manualy establish connection
+//disabling auto configuration(datasource, entityManager, PlatformTransactionManager, where we manualy establish connection
 
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class,
        DataSourceTransactionManagerAutoConfiguration.class})

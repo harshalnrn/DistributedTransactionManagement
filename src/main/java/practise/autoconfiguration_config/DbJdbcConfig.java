@@ -67,7 +67,8 @@ public class DbJdbcConfig {
         return driverManagerDataSource;
     }
 
-    //enable this to demo distrbuted transaction, else disable, where you take single datasource configurations from application.properties
+    //enable this to demo distrbuted transaction, with application connecting to multiple databases as and when required, by injecting required datasource
+    // else disable, where you take single datasource configurations from application.properties
 
     @Bean("dataSource1TransactionManager")
     public PlatformTransactionManager configureJdbcTransactionManager() {

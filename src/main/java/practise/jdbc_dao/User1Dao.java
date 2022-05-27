@@ -82,7 +82,7 @@ public class User1Dao {
 
 
     /**
-     * Spring jdbc(connection)   +native jdbc(crud)  + native jdbc(transaction management)
+     * Spring jdbc(connection)   + native jdbc(crud)  + native jdbc(transaction management)
      *
      * @param userName
      * @return
@@ -164,7 +164,7 @@ public class User1Dao {
 
 
     /**
-     * spring jdbc(connection) + JPA(Entity-Manager) (crud) + Spring transactions (trans mgt)
+     * spring jdbc(connection) + JPA/Springdatajpa(Entity-Manager) (crud) + Spring transactions (JTA implementation)
      *
      * @param userName
      * @return
